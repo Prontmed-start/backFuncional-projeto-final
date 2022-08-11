@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.xml.crypto.Data;
+import java.util.Date;
 
 @Entity //Definição: são componentes que são salvos e manipulados dento do banco de dados(ele vai se transformar em uma tabela)
 @Table(name = "NovoProntuario")
@@ -19,43 +20,43 @@ public class NovoProntuario {
     @GeneratedValue(strategy = GenerationType.AUTO)//Estrategia para gerar os valores da chave primaria da entidade
     private Long id;
 
-    @Column
+    @Column(unique = false,name = "nome")
     private String nome;
 
-    @Column
+    @Column(unique = true,name = "cpf")
     private String cpf;
 
-    @Column
-    private Data dataNascimento;
+    @Column(unique = false,name = "dataNascimento")
+    private Date dataNascimento;
 
-    @Column
+    @Column(unique = false,name = "exerciciosFisicos")
     private boolean exerciciosFisicos;
 
-    @Column
+    @Column(unique = false,name = "alimentacaoBalanceada")
     private boolean alimentacaoBalanceada;
 
-    @Column
+    @Column(unique = false,name = "tabagismo")
     private boolean tabagismo;
 
-    @Column
+    @Column(unique = false,name = "consomeAlcool")
     private boolean consomeAlcool;
 
-    @Column
+    @Column(unique = false,name = "possuiAlergias")
     private boolean possuiAlergias;
 
-    @Column
+    @Column(unique = false,name = "problemasCardiacos")
     private boolean problemasCardiacos;
 
-    @Column
+    @Column(unique = false,name = "problemasOrtopedicos")
     private boolean problemasOrtopedicos;
 
-    @Column
+    @Column(unique = false,name = "medicacaoControlada")
     private boolean medicacaoControlada;
 
-    @Column
+    @Column(unique = false,name = "possuiDiabetes")
     private boolean possuiDiabetes;
 
-    @Column
+    @Column(unique = false,name = "possuiHipertencao")
     private boolean possuiHipertencao;
 
     public Long getId() {
@@ -82,11 +83,11 @@ public class NovoProntuario {
         this.cpf = cpf;
     }
 
-    public Data getDataNascimento() {
+    public Date getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(final Data dataNascimento) {
+    public void setDataNascimento(final Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
