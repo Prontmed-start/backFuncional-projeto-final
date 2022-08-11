@@ -1,4 +1,4 @@
-package com.projeto.prontmed.controller;
+package com.projeto.prontmed.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AgendamentoController {
 
 	
-	@RequestMapping("/form")
-	public String form() {	
-		return "formagendamento";
+	@RequestMapping("/agendamento")
+	public String agendamento() {
+		return "agendamento";
 	}
 	
 	
