@@ -1,4 +1,4 @@
-package com.projeto.prontmed.controllers;
+package com.prontmed.projeto;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,12 +15,7 @@ public class AgendamentoController {
 	
 	
 	
-	
-	
 
-	
-	
-	
 	
 	
 	
