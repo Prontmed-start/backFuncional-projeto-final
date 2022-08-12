@@ -1,0 +1,37 @@
+body{
+    background-color: #030c33;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+#title{
+    flex-direction: column;
+    font-weight: bold;
+    margin-left: -30px;
+   
+}
+
+#medica{
+    width:350px;
+    display: inline-block;
+    margin-left: 480px;
+    
+}
+#logo > img{
+    width: 170px;
+    height: 75px;
+}
+#logo{
+    display: flex;
+    flex-direction: row; 
+}
+
+            
+.titulo {
+    display: inline-block;
+
+}
+
