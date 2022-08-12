@@ -1,41 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-
-<meta charset="UTF -8">
-<title>Agendamento</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/agendamento.css">
+    <title>agendamento</title>
 </head>
 
 <body>
-<h1> Agendamento Paciente </h1>
 
-<form action=" " >
+    <header>
+        <div id="logo">
+             <img src="/assets/img.png" alt="">
+             <h1 id="title">ProntMed</h1>
+        </div>
+     </header>
 
-<div>
-<label>Nome:</label> <input> type="text" name="nome">
-</div>
-<div>
-<label>Cpf:</label> <input> type="int" name="cpf">
-</div>
-<div>
-<label>Data:</label> <input> type="text" name="data">
-</div>
-<div>
-<label>Horario:</label> <input> type="text" name="horario">
-</div>
-<div>
-       <button type="submit">Salvar</button>
-        <button type="reset">Limpar</button>
+    <div style="text-align:center">
+        <h1> Agendamento Paciente </h1>
+    </div>
+    
+<form action="/agendamentosucesso" method="post">
+
+<div id="container-a">
+<label>Nome:</label> <input type="text" name="nome">
+
+<div id="container-b">
+<label>Cpf:</label> <input type="int" name="cpf">
 </div>
 
+<div id="container-c">
+<label>Data:</label> <input type="date" name="data">
+</div>
 
+<div id="container-d">
+<label>Horario:</label> <input type="text" name="horario">
+</div>
 
+<div  style="text-align:center">
+       <button class="botao1" type="submit">Salvar</button>
+        <button class="botao2" type="reset">Limpar</button>
+</div>
 </form>
 
+</div>
 
-
-
-
+    <div>
+        <article>
+        <img id="medica" src="/assets/dra.png" alt="mulher-mexendo">
+        </article>
+    </div>
+     
 </body>
 </html>
