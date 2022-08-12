@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Faça-nos um cadastro pessoal para abrir uma conta corrente">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link media="projection, screen, tv" rel="stylesheet" type="text/css" href="/css/Anamnese.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>prontMED</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
+            <img alt="logoprontmed" src="/assets/img.png">
+            <h1>Tipo de Exames</h1>
+                <form action="/sent.html" method="get" data-jsv-form="true" data-jsv-form-invalid-message="Por favor, corrija os erros abaixo" data-jsv-form-incomplete-tooltip="Por favor, preencha os campos">
+                   
+                    <div class="linha-2">
+                        <label for="Cpf">CPF do paciente*     <input type="text" name="Cpf" id="Cpf"> </label><br>
+                       
+                        <label for="Ef">Tipo de Exame*     <select name="select">
+                            <option value="valor1">selecione</option>
+                            <option value="valor1">Hemograma</option>
+                            <option value="valor2">Colesterol</option>
+                            <option value="valor3">Papanicolau</option>
+                            <option value="valor4">Exames de urina</option>
+                            <option value="valor5">Exames de fezes</option>
+                            <option value="valor6">Glicemia</option>
+                            <option value="valor7">Transaminases (ALT e AST) ou TGP e TGO</option>
+                            <option value="valor8">TSH e T4 livre</option>
+                            
+
+                            
+                          </select></label>
+
+                          <label for="area-relatorio" >Relatório do exame <textarea class="form-control" id="area-relatorio" rows="4"></textarea>
+                          </label>
+                          
+                          
+                         
+                        
+                        
+             
+                    </div>
+                     
+
+                </form>
+                <div class="botoes">
+                    
+                        <a class="menu" href="/templates/geral/paginaperfil.html">CONFIRMAR</a>
+                        <a class="menu">CANCELAR</a>
+            </div>
+        </section>
+    </div>
+                 <p><small>*</small></p>
+
+
+</body>
+
+</html>

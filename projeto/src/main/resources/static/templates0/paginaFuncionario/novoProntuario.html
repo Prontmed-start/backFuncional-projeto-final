@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/css/paginaperfil-2.css">
+    <link rel="stylesheet" href="/css/prontuario.css">
+   
+
+    <title> novo_prontuario </title>
+</head>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ 
+<body>
+    <input type="checkbox" id="check">
+    <!--header começo-->
+    <header>
+        <label for="check">
+            <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+        </label>
+        <div id="logo">
+            <img class="logo" src="/assets/img.png">
+
+            <div id="title" class="left">
+                <h1>ProntMed</h1>
+            </div>
+        </div>        
+    </header>
+
+  
+    <div class="sidebar">
+
+        
+        <a href="#"><ion-icon name="calendar-outline"></ion-icon><span>Agendamentos</span></a>
+        <a href="/cadastropaciente.html"><ion-icon name="person-add-outline"></ion-icon><span>Novo paciente</span>
+        <a href="#"><ion-icon name="document-outline"></ion-icon><span>Novo Prontuario</span></a>
+        <a href="#"><ion-icon name="information-circle-outline" role="img" class="md hydrated" aria-label="information circle outline"></ion-icon><span>Sobre</span></a>
+        <a href="#"><ion-icon name="settings-outline" role="img" class="md hydrated" aria-label="settings outline"></ion-icon><span>Configuração</span></a>
+        
+        <div class="button sair"></div>
+    </div>
+   
+    <aside>
+        <div class="linha1">
+            <div class="quadros">
+                <a class="A" href="/templates/paginaFuncionario/novaAnamnese.html">Anamnese</a>
+            </div>
+            <div class="quadros">
+                <a class="A" href="/templates/paginaFuncionario/laudos-e-exames.html">Laudos e exames</a>
+        </div>
+    </div>
+        
+        <div class="linha2">
+            <div class="quadros">
+                <a class="A" href="/templates/cadastros/cadastropaciente.html">Quadro clinico</a>
+                
+            </div>
+            
+            <div class="quadros">
+                <a class="A" href="/templates/paginaFuncionario/transferencia.html">Tranferencias</a>
+            </div>
+            
+        </div>  
+        <div class="linha2">
+            <div class="quadros">
+                <a class="A" href="/templates/cadastros/cadastropaciente.html">Prescrição de medicamentos</a>
+                
+            </div>  
+            <div class="quadros">
+                <a class="A" href="/templates/cadastros/cadastropaciente.html">Plano terapêutico</a>
+            </div>
+        </div>
+    </aside>
+
+
+</body>
+
+</html>

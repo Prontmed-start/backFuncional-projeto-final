@@ -1,0 +1,162 @@
+html,body {
+	height: 100%;
+}
+
+body {
+    background-color: #030c33;
+}
+
+.teladelogin1 .brand {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+h4{
+	padding-left: 65px;
+}
+
+.teladelogin1  .brand img {
+	
+	height: 155px;
+	align-items: center;
+	display: flex;
+	margin-left: 125px ;
+	margin-bottom: 5px;
+	padding-left: 21px;
+	
+}
+
+.teladelogin1  .card-wrapper {
+	width: 600px;
+}
+
+.teladelogin1  .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(168, 23, 23, 0.05);
+}
+
+.teladelogin1  .card.fat {
+	padding: 10px;
+}
+
+
+
+.teladelogin1  .card .card-title {
+	margin-bottom: 40px;
+	margin-top: 30px;
+	
+	
+}
+
+.teladelogin1  .form-control {
+	border-width: 2.3px;
+}
+
+
+
+.teladelogin1  .form-group label {
+	width: 100%;
+}
+
+
+
+.teladelogin1  .footer {
+	margin: 50px 0;
+	color: rgb(252, 252, 252);
+	text-align: center;
+	font-weight: bold;
+
+}
+
+
+.teladelogin1 .brand {
+    width: 350px;
+    padding-left: 55px;
+}
+
+
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+		
+	}
+}
+
+.botoes{
+display: flexbox;
+flex-direction: row;
+margin-left: 35px;
+
+
+
+
+}
+.form-group .m-0{
+    margin-right: 10px;
+	display: flex;
+	align-items: center;
+
+}
+
+.card-title{
+    font-size:40px;
+    display: flex;
+    justify-content :center;
+
+	color: white;
+	font-weight: bold;
+}
+
+.card.fat2{
+	background-color: #030c33;
+	color: white;
+}
+
+
+<!-- botões-->
+:hover{
+    color: #38b6ff;
+    transition: 0.3s all;
+}
+a{
+	color: white;
+	
+	
+	
+	
+}
+
+.menu{
+    border: 2px solid #38b6ff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 35px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	
+	
+
+    
+}
+.menu:hover{
+    background-color: #38b6ff;
+    color: white;
+}
+
+span{
+	color: #38b6ff;
+}
+

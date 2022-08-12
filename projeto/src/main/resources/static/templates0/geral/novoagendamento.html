@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontstart/css/agendamentosadm.css">
+
+    <title> paginanovoagendamneto </title>
+</head>
+
+
+<body>
+    <input type="checkbox" id="check">
+    <!--header começo-->
+    <header>
+        <div>
+            <label for="check">
+                <ion-icon name="menu-outline" id="sidebar_btn" onclick="movepainel()"></ion-icon>
+            </label>
+        </div>
+        <div id="logo">
+            <img class="logo" alt="logo" src="/frontstart/assets/img.png">
+
+            <div id="title" class="left">
+                <h1>ProntMed</h1>
+            </div>
+        </div>
+    </header>
+    <!--Inicio do menu lateral-->
+
+    <div class="sidebar">
+        <div class="areanomefoto">
+
+            <img src="/frontstart/assets/atendente1.png" class="imagem" alt>
+            <h2>Maria</h2>
+        </div>
+        <nav>
+            <a href="paineldecontroleadm.html" id="dasboard">
+                <ion-icon name="tv-outline"></ion-icon><span>Painel de Controle</span>
+            </a>
+            <a href="#">
+                <ion-icon name="calendar-outline"></ion-icon><span>Agendamentos</span>
+            </a>
+            <a href="#">
+                <ion-icon name="person-add-outline"></ion-icon><span>Novo paciente</span>
+            </a>
+            <a href="#">
+                <ion-icon name="document-outline"></ion-icon><span>Novo Prontuario</span>
+            </a>
+            <a href="#">
+                <ion-icon name="information-circle-outline"></ion-icon><span>Sobre</span>
+            </a>
+            <a href="#">
+                <ion-icon name="settings-outline"></ion-icon><span>Configuração</span>
+            </a>
+            <a href="#">
+                <ion-icon name="exit-outline"></ion-icon><span>Sair</span>
+            </a>
+        </nav>
+    </div>
+<!--fim no menu lateral-->
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--inicio panel (todo o painel deve estar aqui)-->
+    <div id="painel" class="main">
+        
+    </div>
+    <!--fim painel-->
+</body>
+</html>
