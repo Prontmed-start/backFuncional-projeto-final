@@ -1,0 +1,399 @@
+body {
+    background-color: #eff1f7;
+}
+
+#title {
+    flex-direction: column;
+    font-weight: bold;
+    margin-left: -30px;
+    color: white;
+    margin-top: 15px;
+
+}
+
+
+#logo>img {
+    width: 150px;
+    height: 75px;
+    padding: 1%;
+    margin: 0%;
+    margin-left: 28px;
+}
+
+#logo {
+    display: flex;
+
+}
+
+header {
+    display: flex;
+    background-color: #030c33;
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-top: 90px;
+    padding-top: 30px;
+    left: 0;
+    background: #030c33;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+#body {
+    width: 250px;
+    height: 100%;
+    margin-top: 70px;
+    margin-left: 200px;
+    left: 80px;
+    right: 200px;
+    
+    padding-top: 30px;
+
+}
+
+.sidebar .imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.sidebar h2 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #51b3ec;
+}
+
+.sidebar ion-icon {
+    padding-right: 30px;
+}
+/*botão*/
+label #sidebar_btn {
+    z-index: 1;
+    position: fixed;
+    left: 10px;
+    color: #fff;
+    font-size: 45px;
+    margin: 9px 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+/*cor do botão quando clica*/
+label #sidebar_btn:hover {
+    color: #51b3ec;
+}
+
+#check:checked~.sidebar {
+    left: -190px;
+}
+
+#check:checked~.sidebar a span {
+    display: none;
+}
+
+#check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check:checked~.content {
+    margin-left: 60px;
+}
+
+#check {
+    display: none;
+}
+
+.left h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.left span {
+    color: #51b3ec;
+}
+
+.main{
+    position: relative;
+    margin-left: 275px;
+    width: 1200px;
+    left: 80px;
+    top: 75px;
+    display: grid;
+}
+.main-top{
+    display: flex;
+    width: 100%;
+    position: center;
+    font-weight: bold;
+    margin-left: 550px;
+    color: black;
+    margin-top: 3%;
+    text-decoration: none;
+
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .cardmedico {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 39px;
+    margin: 20px;
+    width: 220px;
+    height: 110px;
+    transition: all 0.3s ease-out;
+    background-color: white;
+   
+  }
+  .cardmedico:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .cardmedico p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+  .cardenfermeiro {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 220px;
+    transition: all 0.3s ease-out;
+    background-color: white;
+    
+  }
+  .cardenfermeiro:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .cardenfermeiro p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .imagecard {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  .cardtecnico {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 39px;
+    margin: 20px;
+    width: 200px;
+    height: 110px;
+    transition: all 0.3s ease-out;
+    background-color: white;
+  }
+  .cardtecnico:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .cardtecnico p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+  .cardpaciente {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 220px;
+    transition: all 0.3s ease-out;
+    background-color: white;
+  }
+  .cardpaciente:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .cardpaciente p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+  #quantidade{
+    text-decoration: none;
+    font-size: 45px;
+    margin-bottom: 0;
+    font-weight: 600;
+    -webkit-transition: .5s;
+    transition: .5s;
+    color: #030c33;
+    margin-bottom: 0;
+    font-family: rajdhani,sans-serif;
+    line-height: 1;
+}
+/*Inicio css painel de agendamento*/
+#painel-agendamento{
+  padding: 30px;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  height: calc(100% - 30px);
+  margin-top: 100px;
+  width: 1200px;
+  align-items: center;
+  margin-left: 370px;
+
+}
+
+h3{
+  font-family: rajdhani,sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #2e4765;
+    line-height: 1.2;
+    font-size: 22px;
+    color: #2e4765;
+    line-height: 20px;
+    left: 20px;
+    margin-bottom: 22px;
+}
+ .dadostabelapctsagendamento{
+  position: relative;
+    clear: both;
+    zoom: 1
+ }
+ .tabelapctsagendamento .table{
+  margin-bottom: 0;
+  background: #fff;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    width: 100%!important;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0
+ }
+ 
+ #titulostabagd{
+  list-style: none;
+  display: flex;
+  float: none;
+  font-weight: 600;
+  border-radius: 30px 0 0 30px;
+  border-bottom: 0 solid transparent;
+  background-color: #fff;
+  padding: 17px 30px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  border-radius: 10px;
+  background: #030c33;
+
+ }
+ .tituloid{
+  padding-left: 30px;
+  padding-right: 50px;
+  font-size: 18px;
+  color: white;
+ }
+ .titulonome{
+  padding-right: 290px;
+  font-size: 18px;
+  color: white;
+ }
+ .titulomedico{
+  padding-right: 270px;
+  font-size: 18px;
+  color: white;
+ }
+ .titulodata{
+  padding-right: 190px;
+  font-size: 18px;
+  color: white;
+ }
+ .titulohora{
+  padding-right: 4px;
+  font-size: 18px;
+  color: white;
+ }
+ .paciente {
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  width: 100%!important;
+  margin: 0 auto;
+  clear: both;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 18px;
+  color: black;
+  line-height: 30px;
+  list-style: none;
+  display: flex;
+ }
+
+ table{
+  vertical-align: inherit;
+ }
+
+ .nomepct{
+  padding-left: 50px;
+  
+
+ }
+ .qnt{
+  padding-left: 60px;
+ 
+ }
+
+ .data{
+padding-left: 240px;
+ }
+ .nomemed{
+ padding-left: 240px;
+  
+ }
+ .hora{
+padding-left: 160px;
+ }
+.tabelasdados{
+  width: 1200px;
+}
+ 

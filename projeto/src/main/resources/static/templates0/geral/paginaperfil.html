@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/paginaperfil-2.css">
+
+    <title> paginaperfil </title>
+</head>
+<STYLE>A {text-decoration: none;} </STYLE>
+<body>
+    <input type="checkbox" id="check">
+    <!--header começo-->
+    <header>
+        <div>
+            <label for="check">
+                <ion-icon name="menu-outline" id="sidebar_btn" onclick="movepainel()"></ion-icon>
+            </label>
+            <div id="logo">
+
+                <img class="logo" src="/assets/img.png">
+
+                <div id="title" class="left">
+                    <h1>ProntMed</h1>
+                </div>
+            </div>
+    </header>
+
+    <div class="sidebar">
+        <center>
+            <img src="/assets/atendente.JPG" class="imagem" alt>
+            <h2>Maria</h2>
+        </center>
+        <nav>
+            <a href="paineldecontroleadm.html" name="dasboard"> <ion-icon name="tv-outline"></ion-icon><span>Painel de Controle</span></a>
+            <a href="#">
+                <ion-icon name="calendar-outline"></ion-icon><span>Agendamentos</span>
+            </a>
+            <a href="/templates/cadastros/novopaciente.html">
+                <ion-icon name="person-add-outline"></ion-icon><span>Novo paciente</span>
+                <a href="/templates/paginaFuncionario/novoProntuario.html">
+                    <ion-icon name="document-outline"></ion-icon><span>Novo Prontuario</span>
+                </a>
+                <a href="/templates/geral/sobre.html">
+                    <ion-icon name="information-circle-outline"></ion-icon><span>Sobre</span>
+                </a>
+                <a href="#">
+                    <ion-icon name="settings-outline"></ion-icon><span>Configuração</span>
+                </a>
+                <a href="#">
+                    <ion-icon name="exit-outline"></ion-icon><span>Sair</span>
+        </nav>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+
+    <div id="painel" class="main">
+         <!--AQUI ESCREVE CONTEUDO DA PAGINA -->
+    </div>
+</body>
+
+</html>
