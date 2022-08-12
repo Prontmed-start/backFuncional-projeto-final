@@ -9,7 +9,7 @@ public class PacienteController {
 
     @GetMapping("/novopaciente")
     public String cadastro(){
-        return "novoPaciente";
+        return "novopaciente";
     }
 
 }
