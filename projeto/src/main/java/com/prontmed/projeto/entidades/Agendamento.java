@@ -56,9 +56,9 @@ public class Agendamento {
 		this.horario = horario;
 	}
 
-	@Override
-	public String toString() {
-		return Agendamento [id= + id + , nome= + nome + , cpf= + cpf + , data= + data + , horario= + horario
-				+ ];
-	}
+	//@Override
+	//public String toString() {
+		//return Agendamento [id= + id + , nome= + nome + , cpf= + cpf + , data= + data + , horario= + horario
+		//		+ ];
+	//}
 }
