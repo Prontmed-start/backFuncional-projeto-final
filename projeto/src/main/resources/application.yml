@@ -10,10 +10,10 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/prontmed
     username: root
-    password:
+    password: 84219019
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
-    name: prontmed
+    name: projeto
   mvc:
     throw-exception-if-no-handler-found: true
 

@@ -1,5 +1,4 @@
 package com.prontmed.projeto.resource;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +18,8 @@ public class LoginController {
         @PostMapping("/logar")
         public String logar(Model model, String login, String password, String remember){
             return "index";
-        }
-    }
+       }}
+
+
+
 
