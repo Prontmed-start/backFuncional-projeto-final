@@ -1,4 +1,4 @@
-package com.prontmed.projeto.resource;
+package com.prontmed.projeto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

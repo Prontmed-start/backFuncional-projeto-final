@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontstart/css/novoprontuario.css">
+
+    <title> paginaperfil </title>
+</head>
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+
+<body>
+<input type="checkbox" id="check">
+<!--header começo-->
+<header>
+    <div>
+        <label for="check">
+            <ion-icon name="menu-outline" id="sidebar_btn" onclick="movepainel()"></ion-icon>
+        </label>
+        <div id="logo">
+
+            <img class="logo" src="/assets/img.png">
+
+            <div id="title" class="left">
+                <h1>ProntMed</h1>
+            </div>
+        </div>
+</header>
+
+<div class="sidebar">
+    <center>
+        <img src="/assets/atendente.JPG" class="imagem" alt>
+        <h2>Maria</h2>
+    </center>
+    <nav>
+        <a href="/frontstart/templates/paginaFuncionario/agendamentosadm.html">
+            <ion-icon name="calendar-outline"></ion-icon><span>Agendamentos</span>
+        </a>
+        <a href="/frontstart/templates/paginaFuncionario/novopaciente.html">
+            <ion-icon name="person-add-outline"></ion-icon><span>Novo paciente</span>
+            <a href="/templates/paginaFuncionario/novoProntuario.html">
+                <ion-icon name="document-outline"></ion-icon><span>Novo Prontuario</span>
+            </a>
+            <a href="#">
+                <ion-icon name="exit-outline"></ion-icon><span>Sair</span>
+    </nav>
+</div>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+<div id="painel" class="main">
+    <div class="areanovoprontuario">
+        <div class="container">
+
+
+
+            <h1 class="tituloprontuario">Prontuario</h1>
+            <form action="" class="form">
+
+                <div class="linha-1">
+                    <label for="Nome">Nome: *<br><input type="text" name="nome" class="nome" id="nome"> </label><br>
+                    <label for="Cpf">CPF: *<br><input type="text" name="Cpf" class="cpf" id="cpf"> </label><br>
+                    <label for="idade">Data de nascimento: *<br><input type="date" class="datanascimento" name="datanascimento"
+                                                                       id="datanascimento"> </label><br>
+
+                    <label for="Ef">Exercícios Físicos: *</label>
+
+
+                    <label for="Ef">Sim <input type="radio" name="Exercícios Físicos" class="exercicios" id="Ef"></label>
+
+
+                    <label for="Ef">Não <input type="radio" name="Exercícios Físicos" class="exercicios" id="Ef"></label>
+                    <br>
+                    <label for="Ab">Alimentação Balanceada: *</label>
+
+
+                    <label for="Ab">Sim <input type="radio" name="Alimentação Balanceada" class="alimentacao"id="Ab"> </label>
+
+
+                    <label for="Ab">Não <input type="radio" name="Alimentação Balanceada" class="alimentacao" id="Ab"></label><br>
+                    <label for="te"> Tabagismo:*</label>
+
+                    <label for="Ef">Sim <input type="radio" name="tabagismo" class="tabagismo" id="tb"> </label>
+                    <label for="te">Não <input type="radio" name="tabagismo" class="tabagismo" id="tb"> </label><br>
+
+                    <label for="Ef">Ingere Alcool: *</label>
+
+                    <label for="Ef">Sim <input type="radio" name="Ingere alcool" class="alcool" id="IA"> </label>
+                    <label for="Ef">Não <input type="radio" name="Ingere alcool" class="alcool" id="IA"></label><br>
+
+
+
+                </div>
+
+
+
+                <div class="linha-2">
+                    <label for="te"> Possui Diabetes: *</label>
+
+                    <label for="Ef">Sim <input type="radio" name="diabetes" class="diabetes" id="diabetes"> </label>
+                    <label for="te">Não <input type="radio" name="diabetes" class="diabetes" id="diabetes"> </label><br>
+
+                    <label for="Ef">Possui Hipertenção: *</label>
+
+                    <label for="Ef">Sim <input type="radio" name="possuiHipertencao" class="hipertencao" id="Hi"> </label>
+                    <label for="Ef">Não <input type="radio" name="possuiHipertencao" class="hipertencao" id="Hi"></label><br>
+
+
+
+
+
+                    <label for="Ab">Antecedentes Alérgicos: *</label>
+
+                    <label for="Ab">Sim <input type="radio" name="Antecedentes Alérgicos" class="alergia" id="Aa"> </label>
+
+
+                    <label for="Ab">Não <input type="radio" name="Antecedentes Alérgicos" class="alergia" id="Aa"></label>
+                    </br>
+
+
+                    <label for="te">Problemas Ortopédicos: *</label>
+
+                    <label for="Ef">Sim <input type="radio" name="Problemas Ortopédicos" class="pOrtopedicos" id="Po"> </label>
+                    <label for="te">Não <input type="radio" name="Problemas Ortopédicos" class="pOrtopedicos" id="Po"> </label><br>
+
+                    <label for="Ef">Problemas Cardíacos: *</label>
+
+                    <label for="Ef">Sim <input type="radio" name="Problemas Cardíacos" class="pCardiacos" id="Pc"></label>
+                    <label for="Ef">Não <input type="radio" name="Problemas Cardíacos" class="pCardiacos" id="Pc"></label><br>
+
+                    <label for="Ab">Medicação Controlada: *</label>
+
+                    <label for="Ab">Sim <input type="radio" name="medicacaoControlada"  class="medicacaoControlada"id="Mc"></label>
+                    <label for="Ab">Não <input type="radio" name="medicacaoControlada" class="medicacaoControlada" id="Mc"></label><br>
+                    <label for="area-medicamentos">Se sim, quais?:<br> <textarea class="area-medicamentos"
+                                                                                 id="area-medicamentos" rows="4"></textarea>
+                    </label>
+                </div>
+                <div class="arearelatorio">
+                    <br>
+                    <label for="area-relatorio">Anotações adicionais:<br> <textarea class="form-control"
+                                                                                    id="area-relatorio" rows="4"></textarea>
+                    </label>
+
+                </div>
+                <div class="botoes">
+                    <button type="submit" class="confirmar">
+                        Confirmar
+                    </button>
+                    <button type="reset" class="cancelar">
+                        <a id="cancelar" href="#">Cancelar</a>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+<script src="/frontstart/js/novoprontuario.js" > </script>
+
+</body>
+
+</html>

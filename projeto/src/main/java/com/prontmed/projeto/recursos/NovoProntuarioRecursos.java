@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 @RestController
 @RequestMapping("/")
@@ -17,7 +19,8 @@ public class NovoProntuarioRecursos {
     NovoProntuarioServico novoProntuarioServico;
 
     //postMapping anotação que indica que recebe request do tipo post(pesquisar tipo de requests e tipo de anotações para cada tipo e os parametros passados)
-    @PostMapping(path = "salvaProntuario",consumes = MediaType.APPLICATION_JSON_VALUE ,produces = MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin(origins = "*")//perimite receber pos de requsisiçoes locais
+    @PostMapping(path = "salvaProntuario",consumes = MediaType.APPLICATION_JSON_VALUE )
     public void salvaProntuario(@RequestBody final NovoProntuario novoProntuario){
         novoProntuarioServico.salvaProntuario(novoProntuario);
     }
