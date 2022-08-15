@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
 
 
 @RestController
@@ -25,4 +29,9 @@ public class NovoProntuarioRecursos {
         novoProntuarioServico.salvaProntuario(novoProntuario);
     }
 
+    @CrossOrigin(origins = "*")
+    @GetMapping(path = "pegarProntuario")
+    public List<NovoProntuario> pegaTodosOsProntuarios(){
+        return novoProntuarioServico.pegaTodosOsProntuarios();
+    }
 }

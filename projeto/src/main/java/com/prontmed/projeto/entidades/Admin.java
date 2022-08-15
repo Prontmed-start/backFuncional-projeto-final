@@ -4,7 +4,7 @@ package com.prontmed.projeto.entidades;
 
 import javax.persistence.*;
 
-import org.hibernate.annotations.Type;
+
 
 
 @Entity
@@ -15,31 +15,26 @@ public class Admin {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         @Column(name = "id")
-        private int id;
+        private Long id;
     
-        @Column(name = "nome", length = 100,nullable = false)
+        @Column(name = "nome", length = 100)
         private String nome;
 
-        @Column(name = "matricula", length = 100,nullable = false)
+        @Column(name = "matricula", length = 100)
         private String matricula;
     
-        @Column(name = "email",length = 100,nullable = false)
+        @Column(name = "email",length = 100)
         private String email;
-        @Column(name = "senha",nullable = false)
+        @Column(name = "senha")
         private String senha;
     
     
     
-        @Column(name = "observacao",nullable = false)
-        @Type(type = "text")
-        private String observacao;
-    
-    
-        public int getId() {
+        public Long getId() {
             return id;
         }
     
-        public void setId(int id) {
+        public void setId(Long id) {
             this.id = id;
         }
     
@@ -66,14 +61,22 @@ public class Admin {
         public void setSenha(String senha) {
             this.senha = senha;
         }
-            public String getObservacao() {
-                return observacao;
-            }
-    
-            public void setObservacao(String observacao) {
-                this.observacao = observacao;
-            }
+        
+
+      
+           
     
     
 
-        }
+        
+    /** */
+    public String getMatricula() {
+        return matricula;
+    }
+
+    
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+}
