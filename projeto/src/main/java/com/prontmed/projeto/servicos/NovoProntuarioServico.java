@@ -4,6 +4,8 @@ import com.prontmed.projeto.entidades.NovoProntuario;
 import com.prontmed.projeto.repositorios.NovoProntuarioRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
+
 
 @Service//anotação que é o conjunto de 4 outras anotações indica que a classe representa um serviço (pesquisar o que é um serviço)
 public class NovoProntuarioServico {
@@ -16,4 +18,7 @@ public class NovoProntuarioServico {
         repositorio.save(novoProntuario);
     }
 
+    public List<NovoProntuario> pegaTodosOsProntuarios(){
+        return repositorio.findAll();
+    }
 }
