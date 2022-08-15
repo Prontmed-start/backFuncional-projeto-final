@@ -8,8 +8,8 @@ import org.hibernate.annotations.Type;
 
 
 @Entity
-@Table(name = "login")
-public class Login {
+@Table(name = "admin")
+public class Admin {
 
     
         @Id
@@ -19,6 +19,9 @@ public class Login {
     
         @Column(name = "nome", length = 100,nullable = false)
         private String nome;
+
+        @Column(name = "matricula", length = 100,nullable = false)
+        private String matricula;
     
         @Column(name = "email",length = 100,nullable = false)
         private String email;
