@@ -17,15 +17,15 @@ public class Admin {
         @Column(name = "id")
         private Long id;
     
-        @Column(name = "nome", length = 100,nullable = false)
+        @Column(name = "nome", length = 100)
         private String nome;
 
-        @Column(name = "matricula", length = 100,nullable = false)
+        @Column(name = "matricula", length = 100)
         private String matricula;
     
-        @Column(name = "email",length = 100,nullable = false)
+        @Column(name = "email",length = 100)
         private String email;
-        @Column(name = "senha",nullable = false)
+        @Column(name = "senha")
         private String senha;
     
     
@@ -61,8 +61,22 @@ public class Admin {
         public void setSenha(String senha) {
             this.senha = senha;
         }
+        
+
+      
            
     
     
 
-        }
+        
+    /** */
+    public String getMatricula() {
+        return matricula;
+    }
+
+    
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+}
