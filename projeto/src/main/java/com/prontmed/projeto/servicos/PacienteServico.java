@@ -11,6 +11,8 @@ public class PacienteServico {
 
     @Autowired
     NovoPacienteRepositorio repositorio;
+
+    
     public void salvaPaciente(final Paciente paciente) {
         repositorio.save(paciente);
     }
